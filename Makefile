@@ -3,8 +3,6 @@
 #   make                      builds bin/lindhard_chi.x and bin/chi_bz.x with mpif90
 #   make FC=mpiifx FFLAGS=-O3 Intel compilers (or mpiifort)
 #   make debug                build with run-time checks
-#   make test                 compare against numpy (needs python3 + numpy)
-#   make test MPIRUN="srun -n 2"
 #   make clean                remove bin/ and build/
 
 FC      = mpif90
