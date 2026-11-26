@@ -32,11 +32,7 @@ Requires a Fortran 2008 compiler and MPI (`use mpi`); no other dependencies. `ch
 6. Run `lindhard_chi.x` with a input file `chi.in` (shown in examples folder) as follows:
 
 ```
-mpirun -np 16 bin/lindhard_chi.x chi.in       
-
-or
-
-mpirun -np 16 bin/lindhard_chi.x < chi.in
+mpirun -np 16 bin/lindhard_chi.x <chi.in > chi.out
 ```
 
 7. The result is written to `chi_<E_F>_<T>.dat` (e.g. `chi_6.4521_300.dat`): `q1 q2 q3  Re_Chi  Im_Chi`
@@ -44,15 +40,16 @@ mpirun -np 16 bin/lindhard_chi.x < chi.in
 9. Use `chi_bz.x` for the Brillouin-zone overlay then use the supplied python script to plot and generate pdf file as follows:
 
 ```
-chi_bz.x bz.in
-
-then
-
+chi_bz.x <bz.in > bz.out
+```
+```
 python3 plot_bz.py chi_6.4521_300_ab
+```
 
-or
+or simply the following so the code looks for relevant files in the current directory
 
-python3 plot_bz.py (looks for relevant files in the current directory)
+```
+python3 plot_bz.py 
 ```
 
 use `python3 plot_bz.py --help` to understand plotting options
