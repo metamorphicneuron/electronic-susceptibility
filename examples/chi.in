@@ -9,4 +9,4 @@
   ! spin       = 1                 ! spin-polarised runs only: 1 = up, 2 = down
   kpt_index(1) = 1                 ! k-resolved output (Re and Im, chi_k1_<E_F>_<T>.dat) for k point at line 1 of step1.dat ...
   kpt_index(2) = 5377              ! ... and line 5377; add kpt_index(3), ... as needed
-/                                  ! end of &lindhard
+/
