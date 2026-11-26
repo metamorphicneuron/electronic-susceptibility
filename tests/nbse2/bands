@@ -1,0 +1,50 @@
+&CONTROL
+  calculation = 'bands'
+  etot_conv_thr =   5.0000000000d-06
+  forc_conv_thr =   5.0000000000d-06
+  outdir = './temp'
+  prefix = 'nbse2'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+  nstep = 1000
+/
+
+&SYSTEM
+    a               =  3.4715297222
+    c               = 18.3554477692
+    degauss         =  0.001
+    ecutwfc         = 80
+    ibrav           = 4
+    nat             = 3
+    ntyp            = 2
+    nbnd            = 30
+    nosym           = .true.
+    noinv           = .true.
+    occupations     = "smearing"
+    smearing        = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    electron_maxstep = 2000
+    mixing_beta      =  4.00000e-01
+/
+
+&IONS
+/
+
+K_POINTS {automatic}
+ 48 48 1 0 0 0
+
+ATOMIC_SPECIES
+Nb     92.90638  Nb.pbe-mt_fhi.UPF
+Se     78.96000  Se.pbe-mt_fhi.UPF
+
+ATOMIC_POSITIONS {crystal}
+Nb            0.0000000000        0.0000000000        0.5000000000
+Se            0.6666666666        0.3333333333        0.5914417871
+Se            0.6666666666        0.3333333333        0.4085582129
+
+

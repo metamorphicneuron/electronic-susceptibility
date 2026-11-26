@@ -1,0 +1,7 @@
+&lindhard                          
+  nscf_out   = 'bands.out'         
+  bands_file = 'bandst.dat.gnu'    
+  temp       = 145.0               
+  sigma      = 0.02                
+  ef         = -1.1249 
+/                                  

@@ -1,0 +1,11 @@
+&bz                               
+  chi_file = 'chi_-1.1249_145.dat'
+  nscf_out = 'bands.out'          
+  plane  = 'ab'                  
+  k3     = 0.0                   
+  zone   = 'first'                
+  extent = 1.0                    
+  G = 0.0 0.0 0.0, 
+  K = 0.3333 0.3333 0.0   
+  M = 0.5 0.0 0.0                 
+/                                 

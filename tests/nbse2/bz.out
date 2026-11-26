@@ -1,0 +1,17 @@
+chi_bz: chi0 of lindhard_chi.x on the Brillouin zone
+  chi file    chi_-1.1249_145.dat: 2401 lines, mesh 48 x 48 x 1
+  cell        from bands.out
+              a1 = (3.47151 0.00000 0.00000)  a2 = (-1.73575 3.00641 0.00000)  a3 = (0.00000 0.00000 18.35533) Angstrom
+              b1 = (1.80993 1.04496 -0.00000)  b2 = (0.00000 2.08993 0.00000)  b3 = (0.00000 -0.00000 0.34231) 1/Angstrom
+  lattice     24 point operations (hexagonal); zone: Wigner-Seitz cell
+  plane       k3 = 0.000000 (H K 0), spanned by b1 and b2; qx along (1.00000 0.00000 0.00000), qy along (0.00000 1.00000 0.00000)
+  written     chi_-1.1249_145_ab_map.dat: 67 x 65 points, first Brillouin zone
+  written     chi_-1.1249_145_ab_bz.dat: 1 zone boundaries
+  written     chi_-1.1249_145_ab_points.dat:
+              G = (0.00000 0.00000 0.00000) r.l.u.  ->  qx, qy = 0.00000, 0.00000 1/Angstrom
+              K = (0.33330 0.33330 0.00000) r.l.u.  ->  qx, qy = 0.60325, 1.04486 1/Angstrom
+              M = (0.50000 0.00000 0.00000) r.l.u.  ->  qx, qy = 0.90496, 0.52248 1/Angstrom
+  largest Re chi0: 2.23803E+00 at qx, qy = -0.60331, -0.56602 1/Angstrom, H K L = -0.33333 -0.10417 0.00000
+     away from Gamma (> 1 mesh step): 2.23803E+00 at qx, qy = -0.60331, -0.56602 1/Angstrom, H K L = -0.33333 -0.10417 0.00000
+  largest Im chi0/w: 7.74351E+01 at qx, qy = 0.00000, 0.00000 1/Angstrom, H K L = 0.00000 0.00000 0.00000
+     away from Gamma (> 1 mesh step): 1.92301E+01 at qx, qy = -0.07541, 0.00000 1/Angstrom, H K L = -0.04167 0.02083 0.00000

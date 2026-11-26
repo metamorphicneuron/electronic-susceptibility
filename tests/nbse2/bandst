@@ -1,0 +1,7 @@
+&BANDS
+  outdir = './temp'
+  prefix = 'nbse2'
+  filband='bandst.dat',
+  lsym = .false.
+/
+

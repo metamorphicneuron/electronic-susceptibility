@@ -1,0 +1,5 @@
+# points of the input in the plane of chi_-1.1249_145_ab_map.dat, each at its own H_a, H_b (its third coordinate is not used: e.g. Gamma at (0, 0))
+# columns: qx qy [1/Angstrom]  label  H K L [r.l.u.]  distance from the plane k3 = 0.000000 [1/Angstrom]
+    0.000000    0.000000  G   0.000000   0.000000   0.000000    0.000000
+    0.603249    1.044859  K   0.333300   0.333300   0.000000    0.000000
+    0.904965    0.522482  M   0.500000   0.000000   0.000000    0.000000

@@ -1,0 +1,10 @@
+# Brillouin-zone boundaries in the plane(s) k3 = 0.000000 (spanned by b1, b2); one closed polygon per zone; Wigner-Seitz zones
+# columns: qx qy [1/Angstrom], (0, 0) = the point H_a = H_b = 0 of the plane
+    0.603310    1.044964
+   -0.603310    1.044964
+   -1.206620   -0.000000
+   -0.603310   -1.044964
+    0.603310   -1.044964
+    1.206620   -0.000000
+    0.603310    1.044964
+

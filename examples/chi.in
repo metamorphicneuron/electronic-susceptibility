@@ -1,0 +1,12 @@
+&lindhard                          
+  nscf_out   = 'nscf.out'          ! pw.x nscf output: verbosity = 'high', nosym = .true., noinv = .true., full automatic mesh
+  bands_file = 'bandst.dat.gnu'    ! optional bands.x output; without it the energies come from nscf.out
+  temp       = 300.0               ! temperature in K; kB*T is the smearing of the real part (required)
+  sigma      = 0.02                ! eV; width of the Gaussian used as Dirac delta in the imaginary part (default 0.02)
+  ! ef         = 6.4521            ! eV; default: 'the Fermi energy is' in nscf.out
+  ! band_first = 23                ! first band used; default: every band that crosses E_F
+  ! band_last  = 26                ! last band used
+  ! spin       = 1                 ! spin-polarised runs only: 1 = up, 2 = down
+  kpt_index(1) = 1                 ! k-resolved output (Re and Im, chi_k1_<E_F>_<T>.dat) for k point at line 1 of step1.dat ...
+  kpt_index(2) = 5377              ! ... and line 5377; add kpt_index(3), ... as needed
+/                                  ! end of &lindhard
