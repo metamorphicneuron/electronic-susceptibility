@@ -31,20 +31,21 @@ Requires a Fortran 2008 compiler and MPI (`use mpi`); no other dependencies. `ch
 5. Change `max_lines` in `PP/src/bands.f90` to match the number of k-points `npk`
 6. Run `lindhard_chi.x` with a input file `chi.in` (shown in examples folder) as follows:
 
-# mpirun -np 16 bin/lindhard_chi.x chi.in       
+mpirun -np 16 bin/lindhard_chi.x chi.in       
 or
-# mpirun -np 16 bin/lindhard_chi.x < chi.in
+mpirun -np 16 bin/lindhard_chi.x < chi.in
 
 7. The result is written to `chi_<E_F>_<T>.dat` (e.g. `chi_6.4521_300.dat`): `q1 q2 q3  Re_Chi  Im_Chi`
 8. Runs with another `temp` or `ef` write new files instead of overwriting
 9. Use `chi_bz.x` for the Brillouin-zone overlay then use the supplied python script to plot and generate pdf file as follows:
 
-# chi_bz.x bz.in
-# python3 plot_bz.py chi_6.4521_300_ab
-or
-# python3 plot_bz.py (looks for relevant files in the current directory)
+chi_bz.x bz.in
 
-# use `python3 plot_bz.py --help` to understand plotting options
+python3 plot_bz.py chi_6.4521_300_ab
+or
+python3 plot_bz.py (looks for relevant files in the current directory)
+
+use `python3 plot_bz.py --help` to understand plotting options
 
 
 ## Convergence
