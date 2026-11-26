@@ -4,7 +4,6 @@ Electronic susceptibility (a.k.a. Lindhard function) Chi0(q) from band energies 
 The real part and the imaginary part (nesting function), both are written at every q-point to one file, `chi_<E_F>_<T>.dat`, along with the contributions of single k-points if requested.
 
 A second program, `chi_bz.x`, puts the result onto the Brillouin zone for overlay plots and comparison with experiments. 
-By default it reads Quantum ESPRESSO (QE) output directly, so no manual pre-processing is needed, and writes the intermediate files so the data it used can be checked.
 
 !!We are using constant matrix approximation wherein the el-ph matrix elements are assumed to be unitary!!
 
