@@ -5,7 +5,7 @@ The real part and the imaginary part (nesting function), both are written at eve
 
 A second program, `chi_bz.x`, puts the result onto the Brillouin zone for overlay plots and comparison with experiments. 
 
-!!We are using constant matrix approximation wherein the el-ph matrix elements are assumed to be unitary!!
+**We are using constant matrix approximation wherein the el-ph matrix elements are assumed to be unitary**
 
 ## Layout and build
 
